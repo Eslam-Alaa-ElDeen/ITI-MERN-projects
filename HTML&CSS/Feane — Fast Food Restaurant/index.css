@@ -1,0 +1,341 @@
+
+.lll{
+      background: url('hero-bg\ \(1\).jpg') no-repeat right center;
+  background-size: cover;
+}
+
+.navbar .navbar-brand{
+       font-family: 'Dancing Script', cursive;
+       color: #fff;
+      padding-left: 8rem;
+}
+.navbar .nav-link {
+  transition: color 0.3s ease;
+  color: #fff;
+}
+.navbar .nav-link:hover {
+  color: #ffc107;
+}
+.icon-link {
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+.icon-link:hover {
+  color: #ffc107;
+}
+.hero-section {
+   margin-left: 4rem;
+  color: white;
+  min-height: 87vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 3rem;
+  padding: 0 0rem 5rem 6rem;
+}      
+    .hero-content h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+    }
+    .hero-content p {
+      max-width: 550px;
+      margin: 20px 0;
+      font-size: 1.1rem;
+    }
+    .btn-warning {
+      background: #ffbe33;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 25px;
+      font-weight: bold;
+    }
+.carousel-indicators {
+  
+  justify-content: flex-start;
+}
+.carousel-indicators [data-bs-target] {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #fff; 
+   margin-top: -7rem; 
+}
+.carousel-indicators .active {
+  background-color: #ffbe33;
+  width: 20px;
+  height: 20px;
+  align-self: self-start;
+ 
+}
+    .carousel-control-prev,
+    .carousel-control-next {
+      display: none;
+    }
+    .offer-card{
+  background:#1a2027;
+  color:#fff;
+  border-radius:15px;
+  display:flex;
+  gap:20px;
+  align-items:center;
+}
+.offer-thumb{
+  width:86px;
+  height:86px;
+  border:4px solid #343a40;
+}
+.ppp img{
+    width: 100%;
+    height: 100%;
+    margin-right: 3rem;
+    border-radius: 50%;
+    transition: .5s;  
+}
+.ppp .img1{
+    width: 11rem;
+    height: 11rem;
+    margin-right: 3rem;
+    overflow: hidden;
+     border-radius: 55%;
+      border: 4px solid #ffbe33;
+}
+.ppp img:hover{
+    transform: scale(1.1);
+}
+.flex-grow-1 {
+margin-top: 1.4rem;
+}
+.flex-grow-1 h5{
+ font-family: 'Dancing Script', cursive;
+ font-size: 30px;
+ font-weight: 500;
+ line-height: 1.2;
+}
+.flex-grow-1 p{
+    font-size: 2.1rem;
+    font-weight: bold;
+     font-family: 'Dancing Script', cursive;
+}
+.flex-grow-1 p sub{
+     font-size: 1.5rem;
+     font-weight: 200;
+     font-family: 'Dancing Script', cursive;   
+}
+.flex-grow-1 a {
+display: inline-block;
+margin-top: 1.2rem;
+color: #fff;
+text-align: center;
+}
+.section-title1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive        
+}
+.py-5 li {
+cursor: pointer;
+}
+.py-5 li button{
+font-size: 1.2rem;
+font-weight: 350;
+margin-left: 4rem;
+}
+.py-5 li .me{
+    background-color: #343a40;
+    color: #fff;
+    width: 6rem;
+  border-radius: 30px;
+}
+.menu-card{
+  border-radius:11px ;
+  overflow:hidden;
+  background-color: #1a2027;
+  border: none;
+}
+.menu-card .img-box{
+ height:14rem;
+  background:#f1f2f3; 
+  transition: transform .45s ease;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius: 0 0 0 45px;  
+}
+.menu-card .img-box img{
+ width: 12rem;
+  object-fit:cover;
+  display:block;
+  transition: transform .45s ease;
+}
+.menu-card:hover .img-box img
+{
+  transform: scale(1.06);
+}
+.menu-card .card-body{
+  margin-top: .7rem;
+  margin-bottom: 1rem; 
+  text-align: left;
+}
+.menu-card .card-body button i{
+    color: #fff;
+    font-size: 1rem;  
+    text-align: start;
+}
+.menu-card .card-body button{
+  width: 3.2rem;
+  height: 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.about-section {
+  background: #222831; 
+  min-height: 100vh;
+}
+.about-img img {
+    margin-top: 3rem;
+  width: 450px;   
+  height: auto;
+}
+.section-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.about-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 500px;
+}
+.read-btn {
+  background: #ffbe33;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 20px;
+  transition:  0.5s ease;
+}
+.read-btn:hover {
+  background: #ffc107;
+  color: #000;
+}
+.n1 h2{
+    justify-self: start;
+     font-family: 'Dancing Script', cursive;
+     font-size: 3rem;
+     font-weight: 500;
+     margin-left: 7rem;
+}
+.book-form div input{
+    height: 3.25rem;
+}
+.book-form button{
+    color: #fff;
+    transition: .5s ease;
+}
+.map-box iframe{
+    border-radius: 15px;
+    touch-action: pan-x pan-y;
+    filter: brightness(.6);   
+}
+.testimonials {
+  height: 85vh;
+}
+.section-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.9rem;
+  font-weight: 500;
+}
+.testimonial-card {
+  background: #1c2431;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+  margin-bottom: 60px;
+  min-height: 200px;
+}
+.testimonial-card h5 {
+  font-weight: bold;
+  margin-top: 15px;
+}
+.testimonial-img {
+  position: relative;
+  margin-top: -40px;
+  text-align: start;
+}
+.testimonial-img img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 4px solid #f7b500;
+  background: #fff;
+    position: relative;
+}
+.testimonial-img::before {
+  content: "";
+  position: absolute;
+  top: -.9rem; 
+  left: 3.3rem;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 18px solid #f7b500; 
+  z-index: 1;
+  
+}
+.custom-control {
+  background: #f7b500;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+.custom-control i {
+  color: #fff;
+  font-size: 18px;
+}
+.footer {
+  background: #1c2431;
+  color: #fff;
+  /* height: 60vh; */
+  padding: 50px 0;
+ 
+}
+.footer-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.footer p, 
+.footer a {
+  color: #fff;
+  margin: 5px 0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer .hti{
+    cursor: pointer;
+}
+.footer .hti:hover{
+  color: #f7b500;
+}
+.social-icons a {
+  font-size: 18px;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+.social-icons a:hover {
+  color: #f7b500;
+}
