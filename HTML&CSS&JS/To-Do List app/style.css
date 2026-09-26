@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f1f1f1;
+}
+
+.header {
+  background-color: #3366cc;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+}
+
+.header h2 {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+#myInput {
+  border: none;
+  padding: 10px;
+  width: 60%;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#addBtn {
+  padding: 10px;
+  background: #5cb8b2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+#addBtn:hover {
+  background-color: #449d97;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #e0f2f1;
+  font-size: 18px;
+  transition: 0.2s;
+  border-bottom: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+ul li:hover {
+  background: #c8e6c9;
+}
+
+ul li.checked {
+  text-decoration: line-through;
+  color: #555;
+}
+
+ul li.checked::before {
+  content: "✔";
+  position: absolute;
+  left: 10px;
+  color: green;
+  font-weight: bold;
+}
+
+.close {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #555;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: red;
+}
