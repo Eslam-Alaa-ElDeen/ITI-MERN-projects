@@ -1,0 +1,183 @@
+
+1 => 
+  db.createCollection("books",{
+    validator:{
+      $jsonSchema:{
+        required:["title"],
+        properties:{
+          title:{
+            bsonType:"string",
+            minLength:1,
+            description:"the title is require and must not be empty"
+          }
+        }
+      }
+    }
+  })
+
+2 =>
+  db.authors.insertOne({
+    name:"Author1",
+    nationality:"British"
+  })
+
+3 =>
+  db.createCollection("logs",{
+    capped:true,
+    size:1000000
+  })
+
+4 =>
+  db.books.createIndex({
+      title:1
+  })
+
+5 =>
+  db.books.insertOne({
+    title:"book1",
+    author:"ali",
+    year:1999,
+    genres:["Fantasy","Adventure"]
+  })
+
+6 =>
+  db.books.insertMany([
+    {
+      "title": "Future",
+      "author": "George Orwell",
+      "year": 2020,
+      "genres": ["Science Fiction"]
+    },
+    {
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "year": 1960,
+      "genres": ["Classic", "Fiction"]
+    },
+    {
+      "title": "Brave New World",
+      "author": "Aldous Huxley",
+      "year": 2006,
+      "genres": ["Dystopian", "Science Fiction"]
+    }
+  ])
+
+7 =>
+  db.logs.insertOne({
+    action:"borrowed"
+  })
+
+8 =>
+  db.books.updateMany({title:"Future"},{
+    $set:{year:2022}
+  })
+
+9 =>
+  db.books.find({
+    title:"Brave New World"
+  })
+
+10 =>
+  db.books.find({
+    year:{
+      $gte:1990,$lte:2010
+    }
+  })
+
+11 =>
+  db.books.find({
+    genres:{
+      $elemMatch:{
+        $eq:"Science Fiction"
+      }
+    }
+  })
+
+12 =>
+  db.books.find().sort({year:-1}).skip(2).limit(3)
+
+13 =>
+  db.books.find({
+    year:{
+      $type:16
+    }
+  })
+
+14 =>
+  db.books.find({
+    genres:{
+        $nin:["Horror","Science Fiction"]
+    }
+  })
+
+15 =>
+  db.books.deleteMany({
+    year:{$lte:2000}
+  })
+
+16 =>
+  db.books.aggregate([
+    {
+      $match:{
+        year:{$gte:2000}
+      }
+    },
+    {
+      $sort:{
+        year:-1
+      }
+    }
+  ])
+
+17 =>
+  db.books.aggregate([
+    {
+      $match:{
+        year:{$gte:2000}
+      }
+    },
+    {
+      $project:{
+        title:1,
+        author:1,
+        year:1,
+        _id:0
+      }
+    }
+  ])
+
+18 =>
+  db.books.aggregate([
+    {
+      $unwind:"$genres"
+    },{
+      $project:{
+        title:1,
+        genres:1,
+        _id:0
+      }
+    }
+  ])
+
+19 =>
+  db.logs.aggregate([
+    {
+      $lookup: {
+        from: "books",
+        localField: "book_id",
+        foreignField: "_id",
+        as: "book_details"
+      }
+    },
+    {
+      $project: {
+        _id: 0,
+        action: 1,
+        book_details: {
+          title: 1,
+          author: 1,
+          year: 1
+        }
+      }
+    }
+  ])
