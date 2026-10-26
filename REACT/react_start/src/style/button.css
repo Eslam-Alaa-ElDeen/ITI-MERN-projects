@@ -17,11 +17,11 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.buttonDiv{
+.tagDiv{
     margin-top: 5rem;
     border:4px solid rgb(7, 76, 76);
-    width:22rem;
-    height: 30rem;
+    width:23rem;
+    height: 34rem;
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 17px;

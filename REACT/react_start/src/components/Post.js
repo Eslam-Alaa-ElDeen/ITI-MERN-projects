@@ -1,11 +1,11 @@
 import "../style/post.css"
-export const Post=()=>{
+export const Post=({title,body})=>{
     return(
         <div className={"postStyle"}>
-            <h1>this is post Title</h1>
+            <h1>{title}</h1>
             <hr></hr>
             <p>
-                this is the post body
+                {body}
             </p>
         </div>
     )

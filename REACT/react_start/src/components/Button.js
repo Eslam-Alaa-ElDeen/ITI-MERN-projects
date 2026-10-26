@@ -1,18 +1,10 @@
 import "../style/button.css"
 
-export const Button=()=>{
+export const Button=({title,children})=>{
     return(
         <div className={"buttonDiv"}>
-            <button className="button">Tag Button</button>
-            <button className="button">Tag Button</button>
-            <button className="button">Tag Button</button>
-            <button className="button">Tag Button</button>
-            <button className="button">Tag Button</button>
-            <button className="button">Tag Button</button>
-            <button className="button">Tag Button</button>
-            <button className="button">Tag Button</button>
-            <button className="button">Tag Button</button>
-            <button className="button">Tag Button</button>
+            <button className="button">{title}{children}</button>
+            
         </div>
     )
 }
